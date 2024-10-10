@@ -1,0 +1,48 @@
+
+\documentclass[12pt]{jarticle}
+
+\usepackage[dvipdfmx]{graphicx}
+%\usepackage{mediabb}
+
+\pagestyle{empty}
+
+% 名刺マルチカードに合わせて修正
+
+\setlength{\textwidth}{182truemm}
+\setlength{\hoffset}{0in}
+\setlength{\voffset}{0in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{14truemm}
+\setlength{\textheight}{275truemm}
+\setlength{\topmargin}{16truemm}
+\advance\oddsidemargin -1in
+\advance\topmargin -1in
+\setlength{\footskip}{0in}
+
+
+
+\begin{document}
+\setlength{\unitlength}{1truemm}
+\begin{picture}(182,275)(0,0)
+\multiput(0,0)(0,55.0){5}{%
+\multiput(0,0)(91,0){2}{%
+
+%% ここから中身 %%%%%%%%%%%%
+    \begin{picture}(91,55)(0,0)
+    \put(22,51){\textbf{\tiny 国立大学法人}}
+    \put(22,47){\textbf{\small 電気通信大学}}  %大学名
+    \put(22,43){\textbf{\scriptsize 電気通信学部○○工学科　助教}} %学科、役職
+    \put(22,33){\scriptsize \textbf{博士（×学）}} %学位など
+    \put(42,32){\textbf{\large 電通 大二郎}} %氏名
+    
+    \put(22,21){\scriptsize {\sffamily 〒182-8585 \textgt{東京都調布市調布ヶ丘}1-5-1}} % Address
+    \put(22,17.5){\scriptsize {\sffamily TEL: 042-XXX-XXXX FAX: 042-XXX-XXXX}} % TEL, FAX
+    \put(22,14){\scriptsize {\sffamily e-mail: d-dentsu@unique.exciting.uec.ac.jp}} % e-mail
+    
+    \put(5,40){\includegraphics[bb=228 468 259 510, clip, width=11mm]{uec-logo.pdf}} % 大学のロゴ
+
+\end{picture}
+}}
+\end{picture}
+\end{document}
